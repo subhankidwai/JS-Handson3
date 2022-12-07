@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Q.1. Find the number of digits</h3>
+    <pre>
+        const Find_Digits = (N) => 
+        {
+          let count=0;
+          while (N!=0){
+            N=Math.floor(N/10);
+            count++;
+            }
+          
+          return count;
+        };
+        </pre>
+    <h3>Q.2. Find the Fives.</h3>
+    <pre>
+        
+const Find_Five = (N) => 
+{
+	 let count=0;
+	 while (N>0){
+	 let  r=(N%10)
+	  if (r==5){
+	    count++
+	  }
+	  N=Math.floor(N/10);
+	 
+	 }
+	 return count
+};
+
+    </pre>
+    <h3>Q.3. Find Sum</h3>
+    <pre>
+        
+const findSum = (n) => {
+    let sum=0
+    for (i=1; i<=n; i++){
+      if (i%2==0){
+      sum=sum+i
+    }
+    }
+    return sum
+};
+
+    </pre>
+    <h3>Q.4. Find the sum of the digits of a given number.</h3>
+    <pre>
+        
+const Number_Sum = (N) => 
+{
+	let sum=0;
+	let c=1;
+	for (i=1;i<=c;i++){
+	let r=(N%10);
+	  sum=sum+r;
+	 
+	  N=Math.floor(N/10);
+	if (N>0){c++;}
+	}
+	return sum
+};
+
+    </pre>
+    <h3>Q.5. Print the Odds.</h3>
+    <pre>
+        
+const Print_Odd = (N) => 
+{
+	 console.log("2")
+	 for (i=2;i<=N;i++){
+	   if (i%2!=0){
+	     console.log(i)
+	   }
+	   
+	 }
+};
+
+    </pre>
+    <h3>Q.6. Print the Pattern.</h3>
+    <pre>
+        
+const Print_pattern = (N) => 
+{
+  let star=""
+  for (i=1;i<=N;i++){
+    for(j=0;j<i;j++){
+    star=star+"*"
+    }
+    star=star+"\n"
+  }
+  console.log(star)
+};
+
+    </pre>
+    <h3>Q.7. Check whether a Number is a prime or not.</h3>
+    <pre>    
+const Prime_Check = (N) => 
+{
+  if (N==0 || N==1){
+    return "NO";
+  }
+    else{
+      for (let i=2;i<N;i++){
+        if(N%i==0){
+          return "NO"
+        } 
+      } 
+    }
+    return "YES"
+};
+
+    </pre>
+    <h3>Q.8. Print Numbers</h3>
+    <pre>
+        
+const printNumbers = (n) => {
+    
+    for (i=1;i<=n;i++)
+    console.log(i)
+  };
+
+    </pre>
+    <h3>Q.9. Print the Table</h3>
+    <pre>
+        
+const Print_Table = (N) => 
+{
+	for (i=1;i<=10;i++){
+	let p=(N*i)
+	
+	console.log(N + " * " + i + " = " + p)
+	}
+};
+
+    </pre>
+</body>
+</html>
